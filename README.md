@@ -38,10 +38,9 @@ This is a **complete, single-file business website** for a marble supplier. No f
 ```
 Marble Website/              ← Your project folder
 │
-├── index.html                 ← Main website (all-in-one file)
-├── style.css                  ← (if separate)
-├── script.js                  ← (if separate)
-├── source code.txt            ← Notes / source reference
+├── index.html                 ← Main website 
+├── style.css               
+├── script.js               
 ├── README.md                  ← This file
 │
 └── photos/                    ← Your marble & project photos
