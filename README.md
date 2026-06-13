@@ -151,12 +151,12 @@ const PHONE = '91XXXXXXXXXX'; // ← Change this to your number
 
 **Change business phone number:**
 ```javascript
-const PHONE = '919XXXXXXXXX'; // Line ~820 in HTML
+const PHONE = '919XXXXXXXXX'; //
 ```
 
 **Change admin password:**
 ```javascript
-const PASS = 'your-password-here'; // Line ~821 in HTML
+const PASS = 'your pass- marble123'; //
 ```
 
 **Change Google Maps link:**
@@ -174,15 +174,14 @@ Replace `<div class="gallery-placeholder gp-1">` with:
 
 ## 📄 License
 
-This website was built for **Dhandai Marble**, Shahada, Nandurbar.  
-All content, business information, and branding belong to Dhandai Marble.
+This website was built by **Pranay Jamdade** the website use name of **Dhandai Marble**, Shahada, Nandurbar.  
+All content, business information, and branding belong to Dhandai Marble and Pranay Jamdade.
 
 ---
 
 <div align="center">
 
-Made with ❤️ for **Dhandai Marble** · Shahada, Nandurbar, Maharashtra
-
-*"Quality Marble, Honest Prices"*
+Made with ❤️ for **ALL OF YOU**
+*"Keep supporting me ;)"*
 
 </div>
