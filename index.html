@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhandai Marble – Natural Stone & Marble</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Dhandai <span>Marble</span> <span style="opacity:0.4;font-size:0.78rem;">(Demo)</span> </a>
+  <ul class="nav-links">
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">&times;</button>
+  <a href="#collection" class="mob-link">Collection</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#gallery" class="mob-link">Gallery</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-marble-bg"></div>
+  <svg class="hero-vein" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+    <path d="M0,200 Q200,100 400,250 T800,200 T1200,180" stroke="#b8966a" stroke-width="1.5" fill="none"/>
+    <path d="M0,350 Q300,280 600,380 T1200,320" stroke="#b8966a" stroke-width="0.8" fill="none"/>
+    <path d="M200,0 Q350,200 300,400 T400,700" stroke="#b8966a" stroke-width="1" fill="none"/>
+    <path d="M800,0 Q750,150 900,300 T850,700" stroke="#d4b896" stroke-width="0.6" fill="none"/>
+  </svg>
+  <div class="hero-content">
+    <span class="hero-tag">Est. in Shahada, Nandurbar</span>
+    <h1>Premium <em>Marble</em><br>from Nature's<br>Heart</h1>
+    <p>We bring the finest natural stone directly from quarry to your home. Timeless beauty, exceptional quality, delivered across the region.</p>
+    <div class="hero-btns">
+      <a href="#collection" class="btn-primary">View Collection</a>
+      <a href="#contact" class="btn-outline" onclick="setRequirement('General quotation request')">Get a Quote</a>
+    </div>
+  </div>
+  <div class="hero-stones">
+    <div class="stone-block"></div>
+    <div class="stone-block"></div>
+    <div class="stone-block"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Years Experience</span></div>
+  <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Happy Clients</span></div>
+  <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Marble Varieties</span></div>
+  <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Natural Stone</span></div>
+</div>
+
+<!-- COLLECTION -->
+<section id="collection">
+  <div class="collection-header reveal">
+    <span class="section-tag">Our Marble</span>
+    <h2 class="section-title">Premium Stone Collection</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Explore our wide range of natural marble, available in various finishes and sizes to suit every project.</p>
+  </div>
+  <div class="marble-grid" id="marbleGrid">
+    <!-- Cards rendered by JS -->
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="reveal">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-title">Our Services</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <rect x="2" y="3" width="20" height="18" rx="1"/><path d="M7 8h10M7 12h6"/>
+      </svg>
+      <div class="service-title">Custom Cutting</div>
+      <p class="service-desc">We cut marble to your exact specifications — flooring tiles, countertops, steps, and more with precise dimensions.</p>
+    </div>
+    <div class="service-card reveal">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/>
+      </svg>
+      <div class="service-title">Bulk Supply</div>
+      <p class="service-desc">Large orders for construction projects, builders, and contractors with competitive pricing and timely delivery.</p>
+    </div>
+    <div class="service-card reveal">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <div class="service-title">Home Delivery</div>
+      <p class="service-desc">Safe and secure delivery to your doorstep across Shahada, Nandurbar and surrounding villages and towns.</p>
+    </div>
+    <div class="service-card reveal">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+      </svg>
+      <div class="service-title">Expert Guidance</div>
+      <p class="service-desc">Our team helps you choose the right marble type, finish, and quantity based on your project and budget.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap reveal">
+      <div class="about-img-placeholder"></div>
+      <div class="about-badge">
+        <span class="about-badge-num">15+</span>
+        <span class="about-badge-text">Years in Stone</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="section-tag">Our Story</span>
+      <h2 class="section-title">Quality Marble,<br>Honest Prices</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Dhandai Marble has been serving the people of Shahada and surrounding areas for over a decade. Located in the heart of Dongergaon Road, we take pride in offering premium natural stone sourced directly from trusted quarries.</p>
+      <div class="about-features">
+        <div class="about-feature">Directly sourced from premium quarries</div>
+        <div class="about-feature">All marble certified for quality and durability</div>
+        <div class="about-feature">Competitive pricing for all budgets</div>
+        <div class="about-feature">Local business with personalised service</div>
+      </div>
+      <br>
+      <a href="#contact" class="btn-primary" style="margin-top:1.5rem; display:inline-block;" onclick="setRequirement('I want to know more about Dhandai Marble services.')">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <span class="section-tag">Our Work</span>
+    <h2 class="section-title">Project Gallery</h2>
+    <div class="divider" style="margin:1.5rem auto;"></div>
+    <p class="section-sub" style="margin:0 auto; color:rgba(245,240,232,0.5);">A glimpse of the beautiful spaces our marble has transformed.</p>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-1" style="position:relative;height:100%;"></div>
+      <div class="gallery-overlay"><span class="gallery-overlay-text">Flooring Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-2" style="position:relative;height:100%;"></div>
+      <div class="gallery-overlay"><span class="gallery-overlay-text">Counter Top</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-3" style="position:relative;height:100%;"></div>
+      <div class="gallery-overlay"><span class="gallery-overlay-text">Living Room</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-4" style="position:relative;height:100%;"></div>
+      <div class="gallery-overlay"><span class="gallery-overlay-text">Staircase</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-5" style="position:relative;height:100%;"></div>
+      <div class="gallery-overlay"><span class="gallery-overlay-text">Bathroom</span></div>
+    </div>
+  </div>
+  <p class="gallery-upload-hint">✦ Replace placeholders with real project photos via Admin Panel</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <span class="section-tag">What People Say</span>
+    <h2 class="section-title">Customer Reviews</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Excellent quality marble at a very fair price. The team helped me pick the right stone for my new home flooring. Very happy with the result!</p>
+      <div class="testimonial-author">Ramesh Patil</div>
+      <div class="testimonial-role">Homeowner, Shahada</div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">We used Dhandai Marble for our entire building project. Bulk order was handled smoothly and delivery was on time. Highly recommend for contractors.</p>
+      <div class="testimonial-author">Suresh Builder</div>
+      <div class="testimonial-role">Contractor, Nandurbar</div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Beautiful selection of stones. I was surprised by how many varieties they had. The black marble I chose looks stunning in my kitchen.</p>
+      <div class="testimonial-author">Priya Desai</div>
+      <div class="testimonial-role">Interior Designer</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <span class="section-tag">Reach Us</span>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Visit our yard or send us a message. We're always happy to help you find the perfect marble.</p>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <div>
+          <span class="contact-item-label">Address</span>
+          <span class="contact-item-value">Serve No 118/1, Plot No 5/6<br>Dongergaon Road, Shahada<br>District Nandurbar – 425409</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <div>
+          <span class="contact-item-label">Phone & WhatsApp</span>
+          <span class="contact-item-value">+91 98765 43210 <span style="opacity:0.4;font-size:0.78rem;">(Demo)</span></span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/>
+        </svg>
+        <div>
+          <span class="contact-item-label">Business Hours</span>
+          <span class="contact-item-value">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 4:00 PM</span>
+        </div>
+      </div>
+      <div>
+        <span class="contact-item-label" style="color:rgba(245,240,232,0.35); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:0.8rem;">Follow Us</span>
+        <div class="contact-social">
+          <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" class="social-btn" title="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="Your Name" id="fname"/>
+          <input type="text" class="form-input" placeholder="Phone Number" id="fphone"/>
+        </div>
+        <input type="email" class="form-input" placeholder="Email Address (optional)" id="femail"/>
+        <textarea class="form-input" placeholder="Tell us about your marble requirement..." id="fmsg"></textarea>
+        <button class="form-submit" onclick="submitForm()">Send Message</button>
+        <p class="form-msg" id="formMsg"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Dhandai <span>Marble</span></span>
+  <span class="footer-copy">© 2026 Pranay Jamdade. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919876543210" class="wa-btn" target="_blank" title="Chat on WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="modal-overlay" id="productOverlay">
+  <div class="modal" id="productModal" style="max-width:850px;">
+    <button class="modal-close" onclick="closeProductModal()">&times;</button>
+    <div class="product-modal-grid">
+      <div class="product-modal-img" id="productModalImage"></div>
+      <div>
+        <h2 class="product-modal-title" id="productModalTitle">Marble Name</h2>
+        <p class="product-modal-desc" id="productModalDesc">Description</p>
+        <div class="product-info-list">
+          <div><span>Availability</span><strong id="productModalQty">Available</strong></div>
+          <div><span>Best Used For</span>Flooring, counter tops, wall cladding, temple area and premium interiors.</div>
+          <div><span>Buying Process</span>Send inquiry on WhatsApp → visit/showroom discussion → final size and price confirmation.</div>
+        </div>
+        <div class="modal-actions">
+          <a href="#" class="mini-btn" id="productWaBtn" target="_blank">WhatsApp Inquiry</a>
+          <a href="#contact" class="mini-btn outline" onclick="closeProductModal()">Contact Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Admin Button -->
+<button id="admin-btn" onclick="openAdmin()">⚙ Owner Panel</button>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="adminOverlay">
+  <div class="modal" id="adminModal">
+    <button class="modal-close" onclick="closeAdmin()">&times;</button>
+
+    <!-- LOGIN SCREEN -->
+    <div id="adminLogin">
+      <h2>Owner Login</h2>
+      <p class="modal-sub">Enter your password to manage the website content.</p>
+      <div class="login-form">
+        <input type="password" class="admin-input" placeholder="Password" id="adminPwd" onkeydown="if(event.key==='Enter')doLogin()"/>
+        <button class="admin-btn" onclick="doLogin()">Login</button>
+        <p class="login-err" id="loginErr">Incorrect password. Try again.</p>
+      </div>
+    </div>
+
+    <!-- PANEL SCREEN -->
+    <div id="adminPanel" style="display:none;">
+      <h2>Owner Panel</h2>
+      <p class="modal-sub">Add, edit, or remove marble listings. Changes save instantly.</p>
+
+      <div class="admin-section">
+        <h3>Add / Edit Marble Type</h3>
+        <input type="hidden" id="editingId"/>
+        <input type="text" class="admin-input" placeholder="Marble Name (e.g. Carrara White)" id="newName"/>
+        <textarea class="admin-input" placeholder="Description (e.g. Classic white with grey veins, ideal for flooring)" id="newDesc"></textarea>
+        <div class="admin-row">
+          <input type="text" class="admin-input" placeholder="Quantity / Stock (e.g. 500 sq ft available)" id="newQty"/>
+          <select class="admin-input" id="newColor">
+            <option value="mp-white">White / Cream</option>
+            <option value="mp-black">Black / Dark</option>
+            <option value="mp-beige">Beige / Brown</option>
+            <option value="mp-gray">Grey</option>
+            <option value="mp-green">Green</option>
+            <option value="mp-pink">Pink / Rose</option>
+          </select>
+        </div>
+        <input type="url" class="admin-input" placeholder="Image URL (optional)" id="newImageUrl"/>
+        <p class="admin-help">For demo, paste an image URL. Real WordPress version will use normal Upload Image button.</p>
+        <button class="admin-btn" onclick="saveMarbleFromAdmin()">Save Marble</button>
+        <button class="admin-btn" type="button" onclick="clearAdminForm()">Clear</button>
+      </div>
+
+      <div class="admin-section">
+        <h3>Current Listings</h3>
+        <div class="admin-cards-list" id="adminCardsList"></div>
+      </div>
+
+      <div style="margin-top:1rem;">
+        <button class="admin-btn danger" onclick="adminLogout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
+
